@@ -1,27 +1,27 @@
 
-public class No {
+public class No<T> {
 	
-	private No proximoNo;
-	private String conteudo;
+	private No<T> proximoNo;
+	private T conteudo;
 	
-	public No (String conteudo) {
+	public No (T conteudo) {
 		this.proximoNo = null;
 		this.conteudo = conteudo;
 	}
 	
-	public String getConteudo() {
+	public T getConteudo() {
 		return conteudo;
 	}
 	
-	public void setConteudo(String conteudo) {
+	public void setConteudo(T conteudo) {
 		this.conteudo = conteudo;
 	}
 	
-	public No getproximoNo() {
+	public No<T> getproximoNo() {
 		return proximoNo;
 	}
 	
-	public void setproximoNo(No proximoNo) {
+	public void setproximoNo(No<T> proximoNo) {
 		this.proximoNo = proximoNo;
 	}
 	
